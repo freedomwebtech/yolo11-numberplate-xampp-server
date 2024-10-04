@@ -2,7 +2,7 @@ import cv2
 from ultralytics import YOLO
 from paddleocr import PaddleOCR
 import numpy as np
-from test import manage_numberplate_db
+from server import manage_numberplate_db
 import cvzone
 # Initialize PaddleOCR
 ocr = PaddleOCR()
