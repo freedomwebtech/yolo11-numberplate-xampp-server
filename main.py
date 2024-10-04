@@ -72,7 +72,7 @@ while True:
 #            cvzone.putTextRect(frame,f'{track_id}',(x1,y1),1,1)
 #            cv2.rectangle(frame,(x1,y1),(x2,y2),(0,255,0),2)
             
-            result = cv2.pointPolygonTest(np.array(area, np.int32), (cx, cy), False)
+            result = cv2.pointPolygonTest(np.array(area, np.int32), ((cx, cy)), False)
             if result >= 0:
                 if track_id not in counter:
                     
